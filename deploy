@@ -6,6 +6,7 @@ if [[ -d .git ]]; then
   git clone $(git remote get-url origin) --depth 1 -b release _public
   cd _public
   git rm -r *
+  cp -R ../web/static ./static
   cp -R ../dist ./
   git add *
   git commit -m "regen for $REV"
