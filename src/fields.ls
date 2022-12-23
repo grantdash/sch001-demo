@@ -27,26 +27,26 @@ fc =
       desc: "請以簡短（150 字內）且非專業人士也能理解的方式介紹此專案。"
       term: [{opset: \length, enabled: true, op: \lte, msg: '太長了', config: val: 150}]
 
-  "專案代表人":
+  "提案代表人":
     type: \@makeform/input
     meta:
       is-required: true
-      desc: "不需要是本名。獲獎團隊須在專案申請時，選定一位自然人作為團隊代表人。專案代表人將被視為專案的代表與聯絡人。"
+      desc: "不需要是本名。獲獎團隊須在提案申請時，選定一位自然人作為團隊代表人。提案代表人將被視為提案的代表與聯絡人。"
 
-  "專案代表人是否具有 U-22 組資格？":
+  "提案代表人是否具有 U-22 組資格？":
     type: \@makeform/radio
     meta:
       is-required: true
-      desc: "資格請參考專案細則 sch001.g0v.tw/means"
+      desc: "資格請參考提案細則 sch001.g0v.tw/means"
       config: values: <[是 否]>
 
-  "專案代表人的 g0v Slack ID":
+  "提案代表人的 g0v Slack ID":
     type: \@makeform/input
     meta:
       is-required: true
       desc: "如何加入 g0v Slack 請參考 g0v.hackmd.io/@jothon/joing0vslack"
 
-  "專案團隊簡介":
+  "提案團隊簡介":
     type: \@makeform/textarea
     meta:
       is-required: true
