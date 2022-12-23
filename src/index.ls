@@ -1,7 +1,7 @@
 module.exports = 
   pkg:
     name: "@jothon/sch001-2022"
-    extend: name: "@grantdash/prj.base"
+    extend: name: "@grantdash/prj.tdb"
     dependencies: [
       {name: "ldview"}
     ]
