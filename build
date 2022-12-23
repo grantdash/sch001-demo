@@ -7,6 +7,8 @@ echo "build lib script ..."
 echo "build pug files to html files ..."
 echo "index.pug ..."
 ./node_modules/.bin/srcbuild-pug src/index.pug > dist/index.html
+echo "copy image files"
+cp src/*.svg dist/
 echo "copy dist into static folder..."
 rm -rf web/static/assets/lib/block/main/
 mkdir -p web/static/assets/lib/block/main/
